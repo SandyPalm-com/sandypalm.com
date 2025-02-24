@@ -17,17 +17,17 @@ const HeaderFilterSection: FC<HeaderFilterSectionProps> = ({
   className = "mb-12",
 }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const [tabActive, setTabActive] = useState("All items");
+  const [tabActive, setTabActive] = useState("All");
 
   return (
     <div className={`flex flex-col relative ${className}`}>
-      <Heading>{`What's trending now`}</Heading>
+      <Heading>{`Book your spot on a beach now`}</Heading>
       <div className="flex flex-col lg:flex-row lg:items-center justify-between space-y-6 lg:space-y-0 lg:space-x-2 ">
         <Nav
           className="sm:space-x-2"
           containerClassName="relative flex w-full overflow-x-auto text-sm md:text-base hiddenScrollbar"
         >
-          {["All items", "Women", "Mans", "Kids", "jewels"].map(
+          {["All", "For family", "For couples", "For singles"].map(
             (item, index) => (
               <NavItem
                 key={index}
