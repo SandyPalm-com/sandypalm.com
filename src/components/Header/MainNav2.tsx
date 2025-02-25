@@ -111,7 +111,7 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
             )}
 
             <AvatarDropdown />
-            <CartDropdown />
+            {/* <CartDropdown /> */}
           </div>
         </div>
       </div>
