@@ -5,8 +5,9 @@ import SectionSliderLargeProduct from "@/components/SectionSliderLargeProduct";
 import SectionSliderProductCard from "@/components/SectionSliderProductCard";
 import SectionGridMoreExplore from "@/components/SectionGridMoreExplore/SectionGridMoreExplore";
 import { DEMO_MORE_EXPLORE_DATA_2 } from "@/components/SectionGridMoreExplore/data";
+import DiscoverMoreSlider from "@/components/DiscoverMoreSlider";
 import SectionPromo2 from "@/components/SectionPromo2";
-import SectionHero3 from "@/components/SectionHero/SectionHero3";
+import SectionHero2 from "@/components/SectionHero/SectionHero2";
 import SectionPromo1 from "@/components/SectionPromo1";
 import { SPORT_PRODUCTS } from "@/data/data";
 import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
@@ -14,12 +15,12 @@ import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
 function PageHome2() {
   return (
     <div className="nc-PageHome2 relative overflow-hidden">
-      <div className="container px-4">
-        <SectionHero3 />
+        <SectionHero2 />
+      <div className="mt-24 lg:mt-32">
+        <DiscoverMoreSlider />
       </div>
-
       <div className="container relative space-y-16 my-16 lg:space-y-16 lg:my-16">
-        <SectionHowItWork />
+        {/* <SectionHowItWork /> */}
 
         {/* SECTION */}
         {/* <SectionSliderProductCard
