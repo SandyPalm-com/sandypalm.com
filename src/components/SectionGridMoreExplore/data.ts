@@ -22,9 +22,9 @@ import explore9Png from "@/images/collections/explore9.png";
 export interface ExploreType {
   id: number;
   name: string;
-  desc: string;
+  desc?: string;
   image: string | StaticImageData;
-  svgBg: string;
+  svgBg?: string;
   color?: string;
   count?: number;
 }

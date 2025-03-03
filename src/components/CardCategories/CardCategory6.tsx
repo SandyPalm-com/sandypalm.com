@@ -10,7 +10,7 @@ export interface CardCategory6Props {
   featuredImage?: string | StaticImageData;
   bgSVG?: string;
   name: string;
-  desc: string;
+  desc?: string;
   color?: string;
 }
 
@@ -35,7 +35,7 @@ const CardCategory6: FC<CardCategory6Props> = ({
           <div className="flex justify-center items-center">
             <NcImage
               alt=""
-              src={featuredImage}
+              src={`https:${featuredImage}`}
               containerClassName={`w-20 h-20 rounded-full overflow-hidden z-0 ${color}`}
             />
           </div>
