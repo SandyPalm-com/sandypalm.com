@@ -29,7 +29,7 @@ const CardCategory1: FC<CardCategory1Props> = ({
         containerClassName={`flex-shrink-0 relative ${
           size === "large" ? "w-20 h-20" : "w-12 h-12"
         } rounded-lg mr-4 overflow-hidden`}
-        src={featuredImage || _getImgRd()}
+        src={`https:${featuredImage}` || _getImgRd()}
         sizes="(max-width: 640px) 100vw, 40vw"
         fill
       />

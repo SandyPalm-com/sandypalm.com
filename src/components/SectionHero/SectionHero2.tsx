@@ -14,7 +14,6 @@ export interface SectionHero2Props {
 let TIME_OUT: NodeJS.Timeout | null = null;
 
 const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
-  // =================
 
   const ref = useRef<HTMLDivElement>(null);
   const swipeState = useHorizontalSwipe(ref, {
@@ -87,9 +86,6 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
       toggleIsRunning(true);
     }, 1000);
   };
-  // ================= ================= =================
-
-  // =================
 
   const renderDots = () => {
     return (

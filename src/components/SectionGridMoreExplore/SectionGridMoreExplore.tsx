@@ -76,7 +76,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
         >
           Start exploring.
         </Heading>
-        <Nav
+        {/* <Nav
           className="p-1 bg-white dark:bg-neutral-800 rounded-full shadow-lg overflow-x-auto hiddenScrollbar"
           containerClassName="mb-12 lg:mb-14 relative flex justify-center w-full text-sm md:text-base"
         >
@@ -152,7 +152,7 @@ const SectionGridMoreExplore: FC<SectionGridMoreExploreProps> = ({
               </div>
             </NavItem2>
           ))}
-        </Nav>
+        </Nav> */}
       </div>
     );
   };

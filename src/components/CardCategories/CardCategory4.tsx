@@ -10,7 +10,7 @@ export interface CardCategory4Props {
   featuredImage?: StaticImageData | string;
   bgSVG?: string;
   name: string;
-  desc: string;
+  desc?: string;
   color?: string;
   count?: number;
 }
@@ -29,22 +29,27 @@ const CardCategory4: FC<CardCategory4Props> = ({
       className={`nc-CardCategory4 relative w-full aspect-w-12 aspect-h-11 h-0 rounded-3xl overflow-hidden bg-white dark:bg-neutral-900 group hover:nc-shadow-lg transition-shadow ${className}`}
     >
       <div>
-        <div className="absolute bottom-0 right-0 max-w-[280px] opacity-80">
-          <Image src={bgSVG} alt="" />
+        <div className="absolute bottom-0 right-0 opacity-70 w-[100%]">
+          <Image src={`https:${featuredImage}`} alt="" className={`w-[100%] h-[100%] overflow-hidden z-0`}
+              width={180}
+              height={180} />
         </div>
 
         <div className="absolute inset-5 sm:inset-8 flex flex-col justify-between">
-          <div className="flex justify-between items-center">
-            <NcImage
+          <div className="">
+            {/* <NcImage
               alt=""
-              src={featuredImage}
+              src={bgSVG}
               containerClassName={`w-20 h-20 rounded-full overflow-hidden z-0 ${color}`}
               width={80}
               height={80}
-            />
-            <span className="text-xs text-slate-700 dark:text-neutral-300 font-medium">
-              {count} products
-            </span>
+            /> */}
+            <div><h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2></div>
+            <div>
+              <span className="text-xs text-slate-700 dark:text-neutral-300 font-medium">
+                {count} beaches
+              </span>
+            </div>
           </div>
 
           <div className="">
@@ -53,7 +58,7 @@ const CardCategory4: FC<CardCategory4Props> = ({
             >
               {desc}
             </span>
-            <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2>
+            {/* <h2 className={`text-2xl sm:text-3xl font-semibold`}>{name}</h2> */}
           </div>
 
           <Link
